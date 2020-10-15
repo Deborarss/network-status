@@ -17,8 +17,8 @@ const Network = () => {
     };
   }, []);
 
-  let isOnline = status === true;
-  let isOffline = status === false;
+  let isOnline = status;
+  let isOffline = status;
   let response = isOnline ? "Online" : "Offline";
 
   return { isOnline, isOffline, response };
